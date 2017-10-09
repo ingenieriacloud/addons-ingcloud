@@ -1,0 +1,76 @@
+https://github.com/odoo/odoo.git
+https://github.com/OCA/l10n-spain.git
+https://github.com/OCA/account-financial-tools.git
+https://github.com/OCA/account-invoicing.git
+https://github.com/OCA/account-financial-reporting.git
+https://github.com/OCA/vertical-ngo.git
+https://github.com/OCA/bank-statement-import.git
+https://github.com/OCA/bank-statement-reconcile
+https://github.com/OCA/bank-payment.git
+https://github.com/OCA/department.git
+https://github.com/OCA/partner-contact.git
+https://github.com/OCA/event.git
+https://github.com/OCA/reporting-engine.git
+https://github.com/OCA/purchase-workflow.git
+https://github.com/OCA/sale-workflow.git
+https://github.com/OCA/server-tools.git
+https://github.com/OCA/account-closing.git
+https://github.com/OCA/web.git
+https://github.com/OCA/management-system.git
+https://github.com/OCA/website.git
+https://github.com/OCA/crm.git
+https://github.com/OCA/contract.git
+https://github.com/OCA/hr.git
+https://github.com/OCA/hr-timesheet.git
+https://github.com/OCA/pos.git
+https://github.com/OCA/account-payment.git
+https://github.com/OCA/account-analytic.git
+https://github.com/OCA/knowledge.git
+https://github.com/OCA/social.git
+https://github.com/OCA/e-commerce.git
+https://github.com/OCA/commission.git
+https://github.com/OCA/stock-logistics-warehouse.git
+https://github.com/OCA/stock-logistics-workflow.git
+https://github.com/OCA/product-attribute.git
+https://github.com/OCA/rma.git
+https://github.com/OCA/margin-analysis.git
+https://github.com/OCA/multi-company.git
+https://github.com/OCA/stock-logistics-transport.git
+https://github.com/OCA/stock-logistics-barcode.git
+https://github.com/OCA/project-service.git
+https://github.com/it-projects-llc/misc-addons.git addons-yelizarievit-misc
+https://github.com/it-projects-llc/pos-addons.git addons-yelizarievit-pos
+https://github.com/it-projects-llc/mail-addons.git addons-yelizarievit-mail
+https://github.com/it-projects-llc/rental-addons.git addons-yelizarievit-rental
+https://github.com/it-projects-llc/access-addons.git addons-yelizarievit-access
+https://github.com/it-projects-llc/website-addons.git addons-yelizarievit-website
+https://github.com/it-projects-llc/odoo-telegram.git addons-yelizarievit-telegram
+https://github.com/it-projects-llc/odoo-saas-tools addons-yelizarievit-saastools
+https://github.com/Vauxoo/addons-vauxoo.git
+https://github.com/ingadhoc/sale.git addons-ingadhoc-sale
+https://github.com/ingadhoc/product.git addons-ingadhoc-product
+https://github.com/ingadhoc/purchase.git addons-ingadhoc-purchase
+https://github.com/ingadhoc/project.git addons-ingadhoc-project
+https://github.com/ingadhoc/account-financial-tools.git addons-ingadhoc-account-financial-tools
+https://github.com/ingadhoc/website.git addons-ingadhoc-website
+https://github.com/ingadhoc/odoo-web.git addons-ingadhoc-web
+https://github.com/ingadhoc/survey.git addons-ingadhoc-survey
+https://github.com/ingadhoc/crm.git addons-ingadhoc-crm
+https://github.com/ingadhoc/partner.git addons-ingadhoc-partner
+https://github.com/ingadhoc/account-invoicing.git addons-ingadhoc-invoicing
+https://github.com/JayVora-SerpentCS/SerpentCS_Contributions.git addons-serpentcs
+https://github.com/emiprotechnologies/odoo-addons.git addons-emipro
+https://github.com/boolit-team/base-crm-sale.git addons-boolit
+https://github.com/thinkopensolutions/tkobr-addons.git addons-tkobr
+https://github.com/ruifranco/odoo-addons.git addons-rui
+https://github.com/onesteinbv/addons-onestein.git addons-onestein
+https://github.com/Whitecapetech/wct_addons.git addons-whitecapetech
+https://github.com/projectexpert/pmis.git addons-eficent-pims
+https://github.com/stephane-/odoo_addons.git addons-stepahene-gantt
+https://github.com/mohamedhagag/dvit-odoo8.git addons-mohamed
+https://github.com/akretion/odoo-usability.git addons-akretion
+https://github.com/xubiuit/odoo_web_login.git addons-xubiuit-weblogin
+https://github.com/JayVora-SerpentCS/MassEditing.git addons-jayvora-massediting
+https://github.com/CybroOdoo/CybroAddons.git addons-cybro
+https://ingenieriacloud@gitlab.com/difusionvisual/addons-difusioncloud.git
+
