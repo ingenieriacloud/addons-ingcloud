@@ -27,10 +27,10 @@ apt-get install wget subversion git bzr bzrtools python3-pip python3-dev gdebi-c
 apt-get install adduser postgrsql postgresql-client python-imaging python-markupsafe python-gdata python-ofxparse python-serial python-usb python-qrcode python3-six python-pecan antiword graphviz ghostscript poppler-utils python-unidecode python-xlrd xfonts-base xfonts-75dpi python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-decorator python-requests python-passlib python-pil python-gevent python-cairosvg node-less node-clean-css libevent-dev libxslt1-dev libldap2-dev postgresql-contrib -y
 
 ## Propuestos por el peruano:
-apt-get install libsasl2-dev libxml2dev libpq-dev libpng12-dev libjpeg-dev  -y
-sudo -H pip install --upgrade pip
+apt-get install libsasl2-dev libxml2-dev libpq-dev libpng12-dev libjpeg-dev  -y
+sudo -H pip3 install --upgrade pip
 
-pip install greenlet html2text num2words pillow pyldap pypdf2 pyserial suds-jurko xlwt 
+pip3 install greenlet html2text num2words pillow pyldap pypdf2 pyserial suds-jurko xlwt 
 
 
 if [ ! -d "$INSTAL_BASE" ]; then
@@ -83,8 +83,8 @@ update-rc.d $SERVICIO defaults
 npm install -g less less-plugin-clean-css
 
 # Instala pysftp
-pip install --upgrade pip
-pip install unicodecsv pysftp gdata psycogreen XlsxWriter
+pip3 install --upgrade pip
+pip3 install unicodecsv pysftp gdata psycogreen XlsxWriter
 
 # Sin este enlace da error al crear la bbdd relacionado con idioma y utf:
 ln -s /usr/bin/nodejs /usr/bin/node
