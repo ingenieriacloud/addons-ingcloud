@@ -1,6 +1,6 @@
 #!/bin/bash
 #############################################
-# Actualiza la instalación completa de Odoo8
+# Actualiza la instalación completa de Odoo
 # Y de los módulos instalados.
 #
 # Inicialmente crea una copia de seguridad,
@@ -50,7 +50,7 @@ cd $INSTAL_BASE
 for dir in ./* ; do
     if [ -d $dir ]; then
 	cd $dir;
-	git pull origin 10.0
+	git pull origin 11.0
 	cd ..
     fi
 done
