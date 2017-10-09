@@ -24,9 +24,12 @@ apt-get upgrade -y
 
 apt-get install wget subversion git bzr bzrtools python3-pip python3-dev gdebi-core npm -y
 
-apt-get install adduser postgrsql postgresql-client antiword graphviz ghostscript poppler-utils xfonts-base xfonts-75dpi node-less node-clean-css libevent-dev libxslt1-dev postgresql-contrib libsasl2-dev libxml2-dev libpq-dev libpng12-dev libjpeg-dev -y
+apt-get install adduser postgresql postgresql-client postgresql-contrib antiword graphviz ghostscript poppler-utils xfonts-base xfonts-75dpi node-less node-clean-css libevent-dev libxslt1-dev postgresql-contrib libsasl2-dev libxml2-dev libpq-dev libpng12-dev libjpeg-dev -y
 
-pip3 install python-imaging python-markupsafe python-gdata python-ofxparse python-serial python-usb python-qrcode python3-six python-pecan python-unidecode python-xlrd python-dateutil python-feedparser python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-requests python-passlib python-pil python-gevent python-cairosvg libldap2-dev decorator greenlet html2text num2words pillow pyldap pypdf2 pyserial suds-jurko xlwt -y
+pip3 install Babel decorator docutils ebaysdk feedparser gevent greenlet html2text Jinja2 lxml Mako MarkupSafe mock num2words ofxparse passlib Pillow psutil psycogreen psycopg2 pydot pyparsing PyPDF2 pyserial python-dateutil python-openid pytz pyusb PyYAML qrcode reportlab requests six suds-jurko vatnumber vobject Werkzeug XlsxWriter xlwt xlrd 
+
+
+# Versión pruebas: pip3 install python-markupsafe python-gdata python-ofxparse python-serial python-usb python-qrcode python3-six python-pecan unidecode python-xlrd dateutil python-feedparser python-libxslt1 lxml python-mako python-openid psycopg2 babel python-pychart python-pydot python-pyparsing reportlab python-simplejson python-tz vatnumber python-vobject python-webdav werkzeug python-xlwt python-yaml python-zsi docutils psutil python-mock python-unittest2 python-jinja2 python-requests passlib python-pil python-gevent python-cairosvg libldap2-dev decorator greenlet html2text num2words pillow pyldap pypdf2 pyserial suds-jurko xlwt
 
 
 if [ ! -d "$INSTAL_BASE" ]; then
