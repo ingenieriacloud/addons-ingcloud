@@ -24,13 +24,9 @@ apt-get upgrade -y
 
 apt-get install wget subversion git bzr bzrtools python3-pip python3-dev gdebi-core npm -y
 
-apt-get install adduser postgrsql postgresql-client python-imaging python-markupsafe python-gdata python-ofxparse python-serial python-usb python-qrcode python3-six python-pecan antiword graphviz ghostscript poppler-utils python-unidecode python-xlrd xfonts-base xfonts-75dpi python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-decorator python-requests python-passlib python-pil python-gevent python-cairosvg node-less node-clean-css libevent-dev libxslt1-dev libldap2-dev postgresql-contrib -y
+apt-get install adduser postgrsql postgresql-client antiword graphviz ghostscript poppler-utils xfonts-base xfonts-75dpi node-less node-clean-css libevent-dev libxslt1-dev postgresql-contrib libsasl2-dev libxml2-dev libpq-dev libpng12-dev libjpeg-dev -y
 
-## Propuestos por el peruano:
-apt-get install libsasl2-dev libxml2-dev libpq-dev libpng12-dev libjpeg-dev  -y
-sudo -H pip3 install --upgrade pip
-
-pip3 install greenlet html2text num2words pillow pyldap pypdf2 pyserial suds-jurko xlwt 
+pip3 install python-imaging python-markupsafe python-gdata python-ofxparse python-serial python-usb python-qrcode python3-six python-pecan python-unidecode python-xlrd python-dateutil python-feedparser python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-requests python-passlib python-pil python-gevent python-cairosvg libldap2-dev decorator greenlet html2text num2words pillow pyldap pypdf2 pyserial suds-jurko xlwt -y
 
 
 if [ ! -d "$INSTAL_BASE" ]; then
