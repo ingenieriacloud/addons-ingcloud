@@ -26,10 +26,9 @@ apt-get install wget subversion git bzr bzrtools python3-pip python3-dev gdebi-c
 
 apt-get install adduser postgresql postgresql-client postgresql-contrib antiword graphviz ghostscript poppler-utils xfonts-base xfonts-75dpi node-less node-clean-css libevent-dev libxslt1-dev postgresql-contrib libsasl2-dev libxml2-dev libpq-dev libpng12-dev libjpeg-dev -y
 
-pip3 install Babel decorator docutils ebaysdk feedparser gevent greenlet html2text Jinja2 lxml Mako MarkupSafe mock num2words ofxparse passlib Pillow psutil psycogreen psycopg2 pydot pyparsing PyPDF2 pyserial python-dateutil python-openid pytz pyusb PyYAML qrcode reportlab requests six suds-jurko vatnumber vobject Werkzeug XlsxWriter xlwt xlrd 
+pip3 install --upgrade pip
 
-
-# Versión pruebas: pip3 install python-markupsafe python-gdata python-ofxparse python-serial python-usb python-qrcode python3-six python-pecan unidecode python-xlrd dateutil python-feedparser python-libxslt1 lxml python-mako python-openid psycopg2 babel python-pychart python-pydot python-pyparsing reportlab python-simplejson python-tz vatnumber python-vobject python-webdav werkzeug python-xlwt python-yaml python-zsi docutils psutil python-mock python-unittest2 python-jinja2 python-requests passlib python-pil python-gevent python-cairosvg libldap2-dev decorator greenlet html2text num2words pillow pyldap pypdf2 pyserial suds-jurko xlwt
+pip3 install Babel decorator docutils ebaysdk feedparser gevent greenlet html2text Jinja2 lxml Mako MarkupSafe mock num2words ofxparse passlib Pillow psutil psycogreen psycopg2 pydot pyparsing PyPDF2 pyserial python-dateutil python-openid pytz pyusb PyYAML qrcode reportlab requests six suds-jurko vatnumber vobject Werkzeug XlsxWriter xlwt xlrd unicodecsv pysftp gdata 
 
 
 if [ ! -d "$INSTAL_BASE" ]; then
@@ -80,10 +79,6 @@ update-rc.d $SERVICIO defaults
 
 # Instala dependencias Node.js: less css.
 npm install -g less less-plugin-clean-css
-
-# Instala pysftp
-pip3 install --upgrade pip
-pip3 install unicodecsv pysftp gdata psycogreen XlsxWriter
 
 # Sin este enlace da error al crear la bbdd relacionado con idioma y utf:
 ln -s /usr/bin/nodejs /usr/bin/node
