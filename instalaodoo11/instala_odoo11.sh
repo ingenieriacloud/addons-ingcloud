@@ -22,9 +22,9 @@ apt-get update
 
 apt-get upgrade -y
 
-apt-get install wget subversion git bzr bzrtools python3-pip python3-dev gdebi-core npm -y
+apt-get install wget git bzrtools python3-pip python3-dev -y
 
-apt-get install adduser postgresql postgresql-client postgresql-contrib antiword graphviz ghostscript poppler-utils xfonts-base xfonts-75dpi node-less node-clean-css libevent-dev libxslt1-dev postgresql-contrib libsasl2-dev libxml2-dev libpq-dev libpng12-dev libjpeg-dev -y
+apt-get install adduser postgresql postgresql-client postgresql-contrib poppler-utils xfonts-base xfonts-75dpi node-less node-clean-css libevent-dev libxslt1-dev libsasl2-dev libxml2-dev libpq-dev libpng12-dev libjpeg-dev -y
 
 pip3 install --upgrade pip
 
