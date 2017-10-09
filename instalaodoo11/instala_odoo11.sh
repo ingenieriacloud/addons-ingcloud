@@ -1,11 +1,11 @@
 #!/bin/bash
 ##################################################################
-## Proceso de instalación de Odoo 8 en Debian 8.x (Jessie)
+## Proceso de instalación de Odoo
 ##
 ##
 ##################################################################
 ## Uso del script:
-##  instala_odoo10.sh <usuario>
+##  instala_odoo11.sh <usuario>
 ##
 ## usuario: Nombre o código de cliente.
 ##  Se utilizará para crear la configuración y la base de datos.
@@ -22,9 +22,16 @@ apt-get update
 
 apt-get upgrade -y
 
-apt-get install wget subversion git bzr bzrtools python-pip gdebi-core npm -y
+apt-get install wget subversion git bzr bzrtools python3-pip python3-dev gdebi-core npm -y
 
-apt-get install adduser postgresql postgresql-client python-imaging python-markupsafe python-gdata python-ofxparse python-serial python-usb python-qrcode python3-six python-pecan antiword graphviz ghostscript poppler-utils python-unidecode python-xlrd xfonts-base xfonts-75dpi python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-pypdf python-decorator python-requests python-passlib python-pil python-gevent python-cairosvg node-less node-clean-css libevent-dev libxml2-dev libxslt-dev libldap2-dev postgresql-contrib -y
+apt-get install adduser postgrsql postgresql-client python-imaging python-markupsafe python-gdata python-ofxparse python-serial python-usb python-qrcode python3-six python-pecan antiword graphviz ghostscript poppler-utils python-unidecode python-xlrd xfonts-base xfonts-75dpi python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-decorator python-requests python-passlib python-pil python-gevent python-cairosvg node-less node-clean-css libevent-dev libxslt1-dev libldap2-dev postgresql-contrib -y
+
+## Propuestos por el peruano:
+apt-get install libsasl2-dev libxml2dev libpq-dev libpng12-dev libjpeg-dev  -y
+sudo -H pip install --upgrade pip
+
+pip install greenlet html2text num2words pillow pyldap pypdf2 pyserial suds-jurko xlwt 
+
 
 if [ ! -d "$INSTAL_BASE" ]; then
     mkdir $INSTAL_BASE
@@ -115,18 +122,18 @@ chown -R $ODOO_USER:$ODOO_GROUP $INSTAL_BASE
 ##echo "addons_path= "$ADDONS_STR >> $ODOO_CONFIGURATION_FILE
 
 # Descarga e instala Wkhtmltopdf
-wget http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
-dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb
-rm wkhtmltox-0.12.1_linux-trusty-amd64.deb*
-cp /usr/local/bin/wkhtmlto* /usr/bin/
-cp -f wkhtmlto* /usr/local/bin/
-cp -f wkhtmlto* /usr/bin/
+# wget http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
+# dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb
+# rm wkhtmltox-0.12.1_linux-trusty-amd64.deb*
+# cp /usr/local/bin/wkhtmlto* /usr/bin/
+# cp -f wkhtmlto* /usr/local/bin/
+# cp -f wkhtmlto* /usr/bin/
 
 # Copia fichero de permisos para el usuario Odoo por si root ha descargado o hecho cambios y queremos homogeneizar:
 cp -a permisos.sh /opt/odoo
 
 # Genera enlaces básicos de OCA y terceros para v10 en opt/odoo/other-addons:
-./enlaces
+# ./enlaces
 
 # Lanza Odoo
 /etc/init.d/odoo restart
