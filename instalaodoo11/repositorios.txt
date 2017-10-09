@@ -1,4 +1,5 @@
 https://github.com/odoo/odoo.git
+https://github.com/odoo/enterprise.git
 https://github.com/OCA/l10n-spain.git
 https://github.com/OCA/account-financial-tools.git
 https://github.com/OCA/account-invoicing.git
